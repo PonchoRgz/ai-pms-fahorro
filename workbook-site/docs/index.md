@@ -3,11 +3,11 @@ layout: home
 
 hero:
   name: "AI for Product Managers"
-  text: "Farmacias del Ahorro & Collective Academy"
+  text: "Farmacias del Ahorro"
   image:
     light: /logo-light.png
     dark: /logo-dark.png
-    alt: Collective Academy
+    alt: Farmacias del Ahorro
   actions:
     - theme: brand
       text: Día 1
