@@ -5,8 +5,8 @@ hero:
   name: "AI for Product Managers"
   text: "Farmacias del Ahorro"
   image:
-    light: /logo-light.png
-    dark: /logo-dark.png
+    light: /fahorro-hero.webp
+    dark: /fahorro-hero.webp
     alt: Farmacias del Ahorro
   actions:
     - theme: brand
