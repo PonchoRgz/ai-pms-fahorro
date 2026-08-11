@@ -6,6 +6,7 @@ export default defineConfig({
   description: "Workbooks para líderes de producto de Farmacias del Ahorro",
   lang: 'es-ES',
   themeConfig: {
+    siteTitle: false,
     logo: { light: '/logo-light.png', dark: '/logo-dark.png' },
     
     nav: [
