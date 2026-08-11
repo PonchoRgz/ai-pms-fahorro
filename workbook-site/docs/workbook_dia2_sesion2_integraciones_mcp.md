@@ -41,7 +41,7 @@ Porque te permite integrar los datos privados de tu empresa al razonamiento de l
 En este ejercicio, simularemos que estás analizando el inventario de Farmacias del Ahorro. Para evitar problemas de permisos de red y herramientas de terceros, nos conectaremos a un archivo de datos local.
 
 ### 📋 Paso 1: Obtener la Base de Datos Local
-1. En los materiales del curso, localiza y guarda en la carpeta raíz de tu proyecto el archivo `inventario_fahorro.csv`.
+1. Descarga el archivo de datos haciendo clic aquí: [📥 Descargar inventario_fahorro.csv](/inventario_fahorro.csv) y guárdalo en la carpeta raíz de tu proyecto.
 2. Este archivo contiene 100 registros de productos con el siguiente formato:
    * `producto_id`, `nombre_medicamento`, `categoria`, `stock_disponible`, `precio_mxn`, `sucursal`, `estatus_reabastecimiento`.
 
