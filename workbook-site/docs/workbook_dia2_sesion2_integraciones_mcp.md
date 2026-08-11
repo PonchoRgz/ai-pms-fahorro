@@ -49,9 +49,8 @@ En este ejercicio, simularemos que estás analizando el inventario de Farmacias 
 Vamos a enseñarle al Hub cómo leer archivos de nuestro sistema.
 
 1. Abre tu aplicación **Antigravity Hub** y entra a tu proyecto.
-2. Navega a `Settings` (⚙️) y entra a la sección de **MCP Servers**.
-3. Haz clic en **Add MCP Server**.
-4. En la configuración, asigna el nombre `inventario-csv` y pega la siguiente configuración estandarizada:
+2. Haz clic en **Open MCP config** en la interfaz principal. Esto abrirá un archivo de configuración `.json`.
+3. Pega la siguiente configuración estandarizada dentro del archivo JSON:
 
 ```json
 {
@@ -68,7 +67,10 @@ Vamos a enseñarle al Hub cómo leer archivos de nuestro sistema.
 }
 ```
 
-5. Haz clic en **Save & Connect**. Espera unos segundos y verifica que aparezca un indicador verde (🟢), lo que significa que el servidor está conectado exitosamente. El agente ahora tiene herramientas nuevas (`read_file`, `list_directory`, etc.) para interactuar con tu entorno local.
+4. Guarda el archivo. Espera unos segundos y el Hub recargará la configuración automáticamente. El agente ahora tendrá herramientas nuevas (`read_file`, `list_directory`, etc.) para interactuar con tu entorno local.
+
+> [!TIP]
+> **Pro-Tip:** ¡Lo más fácil es pedirle a tu agente que lo haga por ti! Puedes solicitarle directamente en el chat que cree la configuración del MCP que necesitas y que edite el archivo JSON de forma automática.
 
 ---
 
@@ -100,6 +102,11 @@ El agente utiliza el MCP para acceder al archivo, analiza su estructura, ejecuta
 * **Objetivo:** Combinar el análisis de datos extraídos vía MCP con la generación de comunicación ejecutiva de forma autónoma.
 * **Instrucción al Agente:** "Toma la lista de medicamentos críticos obtenida mediante el MCP y redacta un correo formal dirigido a la Dirección de Logística de Farmacias del Ahorro solicitando la orden de compra urgente para las sucursales Norte y Poniente."
 * **Entregable:** Un borrador de correo estructurado y profesional que incluye la tabla de datos extraída y está listo para ser enviado.
+
+**Creación y Conexión Automática de un nuevo MCP Custom**
+* **Objetivo:** Pedirle al agente que cree desde cero un dataset y configure un nuevo servidor MCP sin que tú tengas que tocar el código.
+* **Instrucción al Agente:** "Crea un archivo CSV llamado `proveedores_fahorro.csv` con datos inventados de 5 proveedores (incluye id, nombre, tiempos de entrega y nivel de confiabilidad). Después, actualiza mi configuración de MCPs para agregar un servidor custom llamado `proveedores-csv` que lea este directorio para que puedas analizar esos datos."
+* **Entregable:** Una vez que el agente te confirme que lo hizo, pruébalo pidiéndole: "Usa tus herramientas MCP para leer el archivo de proveedores y dime cuál es el más confiable."
 
 </details>
 
