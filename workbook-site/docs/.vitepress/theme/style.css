@@ -1,0 +1,26 @@
+:root {
+  --vp-c-brand-1: #0F172A; /* Slate 900 */
+  --vp-c-brand-2: #1E293B; /* Slate 800 */
+  --vp-c-brand-3: #334155; /* Slate 700 */
+  
+  --vp-c-text-1: rgba(60, 60, 67);
+  --vp-button-brand-bg: var(--vp-c-brand-1);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+}
+
+.dark {
+  --vp-c-brand-1: #38BDF8; /* Sky 400 */
+  --vp-c-brand-2: #7DD3FC; /* Sky 300 */
+  --vp-c-brand-3: #BAE6FD; /* Sky 200 */
+  
+  --vp-c-text-1: rgba(255, 255, 245, 0.86);
+  --vp-button-brand-bg: var(--vp-c-brand-1);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+}
+
+.VPNavBarTitle .logo {
+  height: 32px !important;
+  border-radius: 0;
+  padding: 2px;
+  object-fit: contain;
+}
