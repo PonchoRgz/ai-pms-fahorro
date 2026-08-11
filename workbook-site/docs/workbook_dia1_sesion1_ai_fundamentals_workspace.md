@@ -406,6 +406,18 @@ Amable, paciente, pero fácilmente confundible ante lenguaje técnico o interfac
 
 ---
 
+<details>
+<summary><b>🏋️ Stretch Goal (Ejercicios opcionales de ampliación): Haz clic para desplegar</b></summary>
+
+**El Gem "Abogado del Diablo" (Devil's Advocate)**
+* **Objetivo:** Crear un 5to Gem evaluador diseñado para encontrar debilidades extremas y casos borde (*edge cases*) en un PRD.
+* **Instrucción del Gem:** "Eres un auditor de producto hiper-crítico. Tu objetivo es encontrar 5 razones por las cuales este PRD fallará en producción (ej. falta de conectividad, usuarios confundidos, fallas en la pasarela de pagos). Exige respuestas concretas al PM."
+* **Entregable:** El alumno corre su PRD del Simple Mode por el Gem "Abogado del Diablo" y añade una sección de "Mitigación de Riesgos Extremos" a su documento.
+
+</details>
+
+---
+
 ## 📝 Hoja de Trabajo del Alumno
 
 ### ✍️ Ejercicio de Reflexión Individual
@@ -414,6 +426,12 @@ Amable, paciente, pero fácilmente confundible ante lenguaje técnico o interfac
 
 2. **De los 4 personajes evaluadores (Valeria, Héctor, Rodrigo, Don Donato), ¿cuál es el ángulo que tu equipo suele ignorar con mayor frecuencia al diseñar un PRD?**
    * *Tu respuesta:* ____________________________________________________________________
+
+---
+
+## 🧠 Reflexión y Cierre
+1. **¿Qué parte del concepto de 'AI Workspace' cambió más tu perspectiva de cómo la IA puede integrarse a tu flujo de trabajo?**
+2. **¿Cuál crees que es el mayor riesgo si tu equipo comienza a usar herramientas de IA sin un entendimiento claro de los fundamentos (contexto, formato, datos)?**
 
 ---
 © Collective Academy® 2026. Todos los derechos reservados.

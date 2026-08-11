@@ -130,6 +130,18 @@ Empieza a platicar con tu agente pidiéndole la primera historia de usuario. Bus
 
 ---
 
+<details>
+<summary><b>🏋️ Stretch Goal (Ejercicios opcionales de ampliación): Haz clic para desplegar</b></summary>
+
+**Criterios de Aceptación Estrictos en Formato Gherkin**
+* **Objetivo:** Elevar el nivel del Agente de Handoff para que genere especificaciones listas para automatización de pruebas QA.
+* **Instrucción al Agente:** "Modifica la salida de las historias de usuario para que cada una incluya al menos 2 escenarios descritos con la sintaxis Gherkin: `Scenario:`, `Given [contexto inicial]`, `When [acción del usuario]`, `Then [resultado esperado]`."
+* **Entregable:** Una tabla de historias de usuario exportable a Jira con sintaxis BDD (Behavior-Driven Development).
+
+</details>
+
+---
+
 ## 📝 Hoja de Trabajo del Alumno
 
 ### ✍️ Ejercicio Práctico de Configuración de Agentes
@@ -147,6 +159,12 @@ REGLAS:
 
 2. **¿Qué documentos de tu trabajo diario subirías a un Gemini Notebook para crear un "Audio Overview" tipo podcast que te resuma el estado de tu producto?**
    * *Tu respuesta:* ____________________________________________________________________
+
+---
+
+## 🧠 Reflexión y Cierre
+1. **¿Cómo cambia el rol del Product Manager cuando, en lugar de gestionar humanos, pasas a "gestionar" y orquestar agentes de IA?**
+2. **¿Qué habilidades humanas consideras que se volverán más valiosas a medida que delegamos más tareas operativas a los agentes?**
 
 ---
 © Collective Academy® 2026. Todos los derechos reservados.

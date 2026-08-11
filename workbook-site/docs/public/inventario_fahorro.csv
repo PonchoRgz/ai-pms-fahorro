@@ -1,0 +1,101 @@
+producto_id,nombre_medicamento,categoria,stock_disponible,precio_mxn,sucursal,estatus_reabastecimiento
+PROD-001,Omeprazol Max 500mg,Diabetes,107,125.38,Sur,Normal
+PROD-002,Omeprazol Adulto 100mg,Diabetes,143,1365.14,Centro,Normal
+PROD-003,Amoxicilina Complex 300mg,Respiratorio,96,1099.53,Sur,Normal
+PROD-004,Amoxicilina Plus 400mg,Vitaminas,13,1362.04,Norte,Bajo
+PROD-005,Vitamina C Forte 300mg,Dermatologia,48,569.31,Poniente,Normal
+PROD-006,Clonazepam Complex 500mg,Cardiovascular,17,757.46,Norte,Bajo
+PROD-007,Losartan Pediatrico 100mg,Gastrointestinal,85,80.75,Norte,Normal
+PROD-008,Clonazepam Pediatrico 500mg,Pediatria,130,666.32,Centro,Normal
+PROD-009,Clonazepam Plus 200mg,Respiratorio,19,666.1,Sur,Bajo
+PROD-010,Aspirina Max 400mg,Pediatria,145,1440.95,Oriente,Normal
+PROD-011,Losartan Forte 300mg,Neurologia,16,1091.45,Centro,Bajo
+PROD-012,Clonazepam Retard 200mg,Gastrointestinal,112,463.62,Sur,Normal
+PROD-013,Vitamina C Adulto 100mg,Dermatologia,136,1387.92,Oriente,Normal
+PROD-014,Ibuprofeno Forte 100mg,Diabetes,22,903.86,Centro,Bajo
+PROD-015,Vitamina C Plus 500mg,Diabetes,102,1325.19,Poniente,Normal
+PROD-016,Clonazepam Retard 200mg,Respiratorio,62,981.31,Sur,Normal
+PROD-017,Aspirina Forte 200mg,Diabetes,54,342.24,Centro,Normal
+PROD-018,Clonazepam Retard 400mg,Cardiovascular,101,990.56,Centro,Normal
+PROD-019,Paracetamol Adulto 400mg,Cardiovascular,95,678.95,Centro,Normal
+PROD-020,Metformina Max 500mg,Pediatria,135,188.55,Norte,Normal
+PROD-021,Vitamina C Retard 100mg,Dermatologia,50,104.31,Sur,Normal
+PROD-022,Losartan Complex 300mg,Gastrointestinal,8,1401.22,Centro,Critico
+PROD-023,Paracetamol Forte 200mg,Diabetes,119,1348.09,Oriente,Normal
+PROD-024,Aspirina Plus 300mg,Diabetes,35,1331.85,Sur,Normal
+PROD-025,Clonazepam Retard 300mg,Gastrointestinal,28,894.67,Poniente,Bajo
+PROD-026,Clonazepam Max 200mg,Pediatria,139,319.73,Centro,Normal
+PROD-027,Losartan Complex 100mg,Pediatria,47,970.13,Norte,Normal
+PROD-028,Amoxicilina Forte 100mg,Cardiovascular,66,1301.74,Centro,Normal
+PROD-029,Vitamina C Complex 400mg,Vitaminas,51,170.19,Sur,Normal
+PROD-030,Aspirina Pediatrico 500mg,Gastrointestinal,111,1265.21,Norte,Normal
+PROD-031,Paracetamol Forte 500mg,Gastrointestinal,110,740.47,Oriente,Normal
+PROD-032,Paracetamol Forte 100mg,Cardiovascular,58,555.91,Centro,Normal
+PROD-033,Paracetamol Forte 400mg,Pediatria,12,582.18,Norte,Bajo
+PROD-034,Ibuprofeno Plus 400mg,Gastrointestinal,50,1230.37,Oriente,Normal
+PROD-035,Omeprazol Retard 200mg,Cardiovascular,110,1066.02,Poniente,Normal
+PROD-036,Ibuprofeno Complex 300mg,Vitaminas,99,1213.51,Sur,Normal
+PROD-037,Ibuprofeno Retard 300mg,Cardiovascular,22,739.68,Sur,Bajo
+PROD-038,Ibuprofeno Pediatrico 400mg,Neurologia,3,1196.53,Oriente,Critico
+PROD-039,Clonazepam Plus 200mg,Cardiovascular,85,1102.05,Poniente,Normal
+PROD-040,Ibuprofeno Adulto 500mg,Diabetes,5,1459.66,Norte,Critico
+PROD-041,Amoxicilina Forte 500mg,Dermatologia,20,225.29,Sur,Bajo
+PROD-042,Metformina Pediatrico 500mg,Neurologia,56,1109.59,Centro,Normal
+PROD-043,Loratadina Complex 200mg,Gastrointestinal,124,1415.04,Norte,Normal
+PROD-044,Ibuprofeno Retard 300mg,Neurologia,96,743.38,Sur,Normal
+PROD-045,Ibuprofeno Pediatrico 100mg,Gastrointestinal,53,151.94,Poniente,Normal
+PROD-046,Vitamina C Forte 100mg,Vitaminas,47,344.71,Norte,Normal
+PROD-047,Amoxicilina Retard 200mg,Pediatria,114,384.78,Oriente,Normal
+PROD-048,Metformina Forte 200mg,Vitaminas,55,1027.25,Oriente,Normal
+PROD-049,Loratadina Complex 100mg,Pediatria,89,465.46,Oriente,Normal
+PROD-050,Ibuprofeno Max 300mg,Vitaminas,78,115.47,Centro,Normal
+PROD-051,Clonazepam Pediatrico 400mg,Cardiovascular,61,1450.25,Norte,Normal
+PROD-052,Ibuprofeno Forte 100mg,Diabetes,139,1175.11,Poniente,Normal
+PROD-053,Omeprazol Plus 200mg,Vitaminas,9,1356.03,Norte,Critico
+PROD-054,Vitamina C Pediatrico 100mg,Vitaminas,108,674.55,Sur,Normal
+PROD-055,Amoxicilina Retard 300mg,Pediatria,83,509.86,Oriente,Normal
+PROD-056,Losartan Max 300mg,Pediatria,75,1381.67,Sur,Normal
+PROD-057,Omeprazol Adulto 200mg,Neurologia,31,1365.02,Centro,Normal
+PROD-058,Vitamina C Forte 400mg,Neurologia,126,1144.22,Norte,Normal
+PROD-059,Aspirina Max 400mg,Vitaminas,19,854.36,Poniente,Bajo
+PROD-060,Vitamina C Forte 500mg,Neurologia,50,1072.16,Norte,Normal
+PROD-061,Omeprazol Plus 300mg,Dermatologia,68,864.57,Poniente,Normal
+PROD-062,Ibuprofeno Max 500mg,Neurologia,28,946.94,Poniente,Bajo
+PROD-063,Clonazepam Pediatrico 300mg,Neurologia,11,268.03,Poniente,Bajo
+PROD-064,Ibuprofeno Max 500mg,Pediatria,68,870.44,Oriente,Normal
+PROD-065,Loratadina Forte 100mg,Cardiovascular,53,942.87,Centro,Normal
+PROD-066,Paracetamol Max 200mg,Dermatologia,83,315.5,Poniente,Normal
+PROD-067,Metformina Complex 200mg,Gastrointestinal,13,1392.15,Oriente,Bajo
+PROD-068,Vitamina C Pediatrico 100mg,Respiratorio,11,246.7,Centro,Bajo
+PROD-069,Metformina Retard 300mg,Gastrointestinal,72,1328.65,Sur,Normal
+PROD-070,Ibuprofeno Forte 300mg,Gastrointestinal,142,543.14,Sur,Normal
+PROD-071,Metformina Max 500mg,Vitaminas,72,1119.58,Sur,Normal
+PROD-072,Clonazepam Retard 100mg,Diabetes,43,921.65,Oriente,Normal
+PROD-073,Vitamina C Plus 300mg,Dermatologia,98,1116.91,Oriente,Normal
+PROD-074,Clonazepam Adulto 200mg,Dermatologia,13,389.43,Oriente,Bajo
+PROD-075,Losartan Adulto 300mg,Dermatologia,61,1463.61,Norte,Normal
+PROD-076,Paracetamol Complex 400mg,Pediatria,71,728.27,Sur,Normal
+PROD-077,Aspirina Plus 200mg,Vitaminas,40,296.14,Norte,Normal
+PROD-078,Paracetamol Adulto 400mg,Cardiovascular,34,284.57,Norte,Normal
+PROD-079,Ibuprofeno Retard 500mg,Gastrointestinal,63,1359.75,Poniente,Normal
+PROD-080,Loratadina Retard 500mg,Neurologia,125,1177.76,Centro,Normal
+PROD-081,Metformina Adulto 500mg,Dermatologia,104,720.99,Oriente,Normal
+PROD-082,Metformina Retard 100mg,Pediatria,68,1093.14,Sur,Normal
+PROD-083,Loratadina Retard 500mg,Pediatria,139,653.76,Oriente,Normal
+PROD-084,Vitamina C Retard 400mg,Dermatologia,28,845.93,Centro,Bajo
+PROD-085,Losartan Pediatrico 200mg,Diabetes,46,1338.42,Oriente,Normal
+PROD-086,Aspirina Forte 400mg,Gastrointestinal,76,649.21,Poniente,Normal
+PROD-087,Metformina Adulto 200mg,Pediatria,101,1389.55,Poniente,Normal
+PROD-088,Vitamina C Plus 200mg,Vitaminas,144,1249.99,Norte,Normal
+PROD-089,Metformina Plus 200mg,Dermatologia,78,466.63,Norte,Normal
+PROD-090,Loratadina Forte 500mg,Respiratorio,107,175.04,Centro,Normal
+PROD-091,Amoxicilina Forte 400mg,Neurologia,139,1191.92,Sur,Normal
+PROD-092,Loratadina Plus 400mg,Diabetes,34,439.97,Oriente,Normal
+PROD-093,Vitamina C Max 100mg,Vitaminas,22,421.73,Norte,Bajo
+PROD-094,Amoxicilina Complex 300mg,Dermatologia,78,83.93,Poniente,Normal
+PROD-095,Omeprazol Adulto 300mg,Respiratorio,133,1120.67,Norte,Normal
+PROD-096,Amoxicilina Forte 100mg,Gastrointestinal,86,392.17,Poniente,Normal
+PROD-097,Aspirina Retard 300mg,Respiratorio,119,1419.91,Centro,Normal
+PROD-098,Losartan Plus 500mg,Pediatria,15,896.96,Oriente,Bajo
+PROD-099,Vitamina C Plus 400mg,Vitaminas,77,1355.69,Centro,Normal
+PROD-100,Ibuprofeno Max 100mg,Pediatria,128,272.01,Poniente,Normal

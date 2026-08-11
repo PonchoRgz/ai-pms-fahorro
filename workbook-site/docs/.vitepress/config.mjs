@@ -25,7 +25,9 @@ export default defineConfig({
       {
         text: 'Día 2',
         items: [
-          { text: 'Sesión 1: Ecosistema Antigravity', link: '/workbook_dia2_sesion1_ecosistema_antigravity_orquestacion' }
+          { text: 'Sesión 1: Antigravity Hub, IDE & Skills', link: '/workbook_dia2_sesion1_ecosistema_antigravity_orquestacion' },
+          { text: 'Sesión 2: Conectividad y Datos con MCP', link: '/workbook_dia2_sesion2_integraciones_mcp' },
+          { text: 'Sesión 3: Multi-Agent Workflows', link: '/workbook_dia2_sesion3_multi_agentes_orquestacion' }
         ]
       }
     ]

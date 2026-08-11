@@ -184,6 +184,18 @@ Revisa la vista previa de la app. Pídele al agente: *"Hey Gemini, ejecuta el si
 
 ---
 
+<details>
+<summary><b>🏋️ Stretch Goal (Ejercicios opcionales de ampliación): Haz clic para desplegar</b></summary>
+
+**Carrito de Compras Interactivo con Manejo de Estado en JS**
+* **Objetivo:** Pasar de una interfaz estática en AI Studio Build a un prototipo funcional con lógica de estado en el cliente.
+* **Prompt a AI Studio:** "Añade un contador en tiempo real al botón flotante del carrito. Cada vez que el usuario dé clic en 'Pedir Medicamento Frecuente', el producto debe agregarse a una lista modal de compras y actualizar el total en MXN dinámicamente con JavaScript."
+* **Entregable:** Demostración en vivo en el preview de AI Studio de un flujo de checkout completo funcional.
+
+</details>
+
+---
+
 ## 🐞 7. Guía de Depuración (*Debugging*) y Errores Comunes
 
 Cuando el modelo cometa errores en la interfaz o no aplique los cambios correctamente, utiliza las siguientes estrategias prácticas:

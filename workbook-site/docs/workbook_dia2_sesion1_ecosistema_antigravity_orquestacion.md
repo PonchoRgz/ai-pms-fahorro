@@ -1,4 +1,4 @@
-# 📘 Workbook Día 2 - Sesión 1: Ecosistema Antigravity: Hub, IDE & Orquestación
+# 📘 Workbook Día 2 - Sesión 1: Antigravity Hub, IDE & Skills Personalizados
 **Curso:** AI for Product Managers  
 **Impartido por:** Alfonso Rodríguez (Product Strategy & Operations, Google)  
 **Organización:** Collective Academy®  
@@ -146,6 +146,16 @@ Construiremos 3 Skills dentro de Antigravity Hub para automatizar tareas repetit
 * **Flujo:** Pide al agente usar sus capacidades de navegación (`/browser`) para visitar páginas de competidores y extraer cómo manejan interfaces para adultos mayores, creando una tabla comparativa contra el PRD de Simple Mode. Convierte esto en un skill.
 * 💡 **BONUS:** Crea una tarea programada para que el agente ejecute el análisis en automático cada mes.
 
+<details>
+<summary><b>🏋️ Stretch Goal (Ejercicios opcionales de ampliación): Haz clic para desplegar</b></summary>
+
+**Skill Personalizado `generar-prd-express`**
+* **Objetivo:** Crear un Skill reutilizable que transforme una idea en un borrador de PRD de 1 página.
+* **Estructura del `SKILL.md`:** Define las secciones obligatorias (Problema, Objetivo, KPIs, Scope, Out of Scope, User Stories).
+* **Entregable:** Invocación del skill mediante `/generar-prd-express "Función de recordatorio por WhatsApp de tomas de medicamentos"` y verificación de la estructura generada en Markdown.
+
+</details>
+
 ---
 
 ## 💻 5. Antigravity IDE: Flujos Code-First
@@ -181,45 +191,17 @@ Construiremos 3 Skills dentro de Antigravity Hub para automatizar tareas repetit
 
 ---
 
-## 👥 6. Multi-Agent Workflows: El Escuadrón Autónomo
+## 📝 Hoja de Trabajo del Alumno
 
-Pasar de un Agente Individual a un Flujo Multiagente significa convertirse en el Director de Producto. El Orquestador recibe la instrucción, divide el trabajo y delega tareas a otros agentes expertos (`@ux_agent`, `@qa_agent`, `@backend_agent`).
-
-### 🧠 El Sistema de Archivos (El Cerebro del Agente)
-
-| Archivo | Función / Contenido |
-| :--- | :--- |
-| **`soul.md` o `gemini.md`** | **Identidad (ADN):** Define el carácter, reglas y límites. Es el "Gem" llevado al nivel del código. |
-| **`agents.md`** | **Organigrama / Directorio:** Catálogo de expertos disponibles. Define a quién llamar y las capacidades de cada subagente. |
-| **`memory.md`** | **Continuidad:** Insights destilados a largo plazo (`MEMORY.md`) y *Daily logs* (`memory/YYYY-MM-DD.md`) con las notas crudas. Como los agentes se reinician limpios, el agente anota sus avances aquí para tener continuidad perfecta entre sesiones. Text > Brain. |
+### ✍️ Ejercicio de Diseño de Skills
+1. **Piensa en una tarea recurrente de análisis o redacción que te tome más de 2 horas a la semana. ¿Cómo estructurarías el `SKILL.md` para automatizarla?**
+   * *Nombre del Skill:* _______________________________________
+   * *Objetivo principal:* _______________________________________
+   * *Instrucción clave a incluir:* _______________________________________
 
 ---
 
-## 🏢 7. Manos a la Obra Final: Sistema Multiagente para el Kit de Lanzamiento
-
-### 📖 Escenario del Ejercicio
-*Simple Mode* saldrá al mercado. Un lanzamiento en una empresa de salud requiere campañas de comunicación, guías de atención al cliente y aprobaciones legales.
-
-### Arquitectura (`agents.md`)
-* **Orquestador (PM):** Lee el PRD y da la señal de arranque en hilos paralelos.
-* **Agente de Marketing:** Crea un correo de anuncio persuasivo para los clientes.
-* **Agente de Soporte:** Redacta un manual de 5 preguntas frecuentes para el call center.
-* **Agente Legal (Compliance):** Revisa el trabajo de los dos agentes anteriores en busca de riesgos.
-
-### Configuración
-* **`soul.md` de Legal:** *"Eres un abogado estricto de Farmacias del Ahorro. Si un texto promete curar enfermedades o confunde al usuario, recházalo y exige cambios"*.
-* **`memory.md` (Orquestador):** Un archivo en blanco. El Orquestador registra aquí el estatus en tiempo real de cada pieza (Ej: *Marketing = En Revisión, Soporte = Aprobado*).
-
-### Flujo de Ejecución
-1. **Arranque:** Orquestador manda el PRD a Marketing y Soporte en hilos separados.
-2. **Trabajo Paralelo:** Marketing escribe el correo mientras Soporte hace la guía. Ambos trabajan simultáneamente.
-3. **Pase a Legal:** Cuando terminan, ambos agentes mandan sus borradores directamente al Agente Legal, sin pasar por el Orquestador.
-4. **Validación:** Legal analiza los textos. Si encuentra un error (por ejemplo, sugerir que la app da consultas médicas), rechaza el texto y se lo regresa a Marketing con instrucciones de corrección. Decide si vuelve con ellos o ellos mismos trabajan en corregir.
-5. **Consolidación Final:** Cuando Legal aprueba ambas piezas, le avisa al Orquestador. El Orquestador compila todo y lo guarda como un **"Kit de Lanzamiento"** definitivo.
-
----
-
-## 📝 Reflexión y Cierre
+## 🧠 Reflexión y Cierre
 * ¿Qué parte del proceso cambió más tu forma de pensar?
 * ¿Qué caso real de tu equipo podrías trabajar con este método en los próximos 30 días?
 * Si tuvieras que delegar hoy mismo una de tus tareas semanales más repetitivas a un subagente, ¿cuál sería y qué reglas le pondrías en su `soul.md`?
@@ -227,37 +209,3 @@ Pasar de un Agente Individual a un Flujo Multiagente significa convertirse en el
 * ¿Qué base de datos o herramienta interna de tu empresa crees que tendría el mayor impacto si la conectaras a tus agentes usando un MCP?
 
 ---
-
-<details>
-<summary><b>👀 Prompt de ayuda para el proyecto final (haz clic para revelar)</b></summary>
-<br>
-
-**Prompt:**
-
-Actúa como un ingeniero experto en flujos Agentic. Necesito que crees físicamente en mi directorio actual una estructura de archivos para un equipo de agentes autónomos que gestionarán el lanzamiento del feature 'Simple Mode' de Farmacias del Ahorro.
-
-Por favor, crea la siguiente estructura de carpetas y archivos, asegurándote de usar tus herramientas para escribirlos en el disco. No omitas ningún archivo.
-
-1. **Estructura de Carpetas a Crear:**
-   - Carpeta raíz: `agentes_simple_mode/`
-   - Subcarpetas dentro de la raíz: `memory/` y `subagents/`
-   - Carpetas dentro de subagents: `marketing/`, `soporte/`, `legal/`
-   - Dentro de cada una de las 3 carpetas de los subagentes, crea otra subcarpeta vacía llamada `memory/`.
-
-2. **Archivos del Orquestador (PM) en la carpeta raíz:**
-   - `agents.md`: Define la arquitectura. El Orquestador delega a Marketing y Soporte en paralelo. Ellos le pasan su trabajo a Legal. Legal audita y aprueba o rechaza. Solo al final el Orquestador compila el 'Kit de Lanzamiento'.
-   - `Instrucción de Summoning`: Explícale al Orquestador que debe invocar a los subagentes apuntando a `./subagents/marketing` y `./subagents/soporte` con su herramienta invoke_subagent.
-   - `Instrucción de Memoria`: Dile estrictamente que no existen las "notas mentales". Todo debe guardarlo en `memory/YYYY-MM-DD.md` (diario) o `MEMORY.md` (largo plazo). Text > Brain.
-   - `soul.md`: Es el líder. No redacta, solo coordina, compila el kit final y actualiza el estatus.
-   - `memory.md`: Un pizarrón con el estatus actual (Marketing = Pendiente, Soporte = Pendiente).
-
-3. **Archivos de los Subagentes (en sus respectivas carpetas):**
-   - `agents.md` para Marketing y Soporte: Diles que cuando terminen, deben invocar a Legal (`../legal`) enviando su borrador. Si Legal rechaza, corrigen y vuelven a enviarlo. Si aprueba, terminan su ejecución y devuelven el resultado al Orquestador. Agrega la misma regla de memoria (Text > Brain).
-   - `agents.md` para Legal: Dile que será invocado. Recibe el texto, lo revisa bajo sus reglas, y termina su ejecución respondiendo explícitamente "Aprobado" o "Rechazado con feedback". Agrega la regla de memoria.
-   - `soul.md` para Marketing: Redacta correos persuasivos y empáticos.
-   - `soul.md` para Soporte: Redacta guías directas de 5 FAQs para el call center.
-   - `soul.md` para Legal (Estricto): Protege a la empresa de riesgos médicos. Prohibido prometer curas o sugerir diagnósticos. Rechaza inmediatamente si hay faltas.
-   - `memory.md` (para los 3): Archivos en blanco.
-
-4. **Heartbeat (Cronjob):** Finalmente, usa tu herramienta de 'schedule' para programar un cronjob diario (`0 0 * * *`). El prompt debe ser un "Heartbeat Diario" que le recuerde al agente revisar la actividad del día y escribir un resumen en sus archivos de la carpeta `memory/`. No confíes en notas mentales.
-</details>
