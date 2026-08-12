@@ -65,6 +65,11 @@ Antes de iniciar un prototipo, el PM debe saber qué tipo de soluciones son fact
 
 ## 🔄 4. Metodología de Prototipado para Product Managers
 
+### 📉 El Momento "Ajá": Colapsando el Costo de Construir
+Históricamente, el ciclo de vida del producto estaba diseñado para **retrasar la construcción de software**. Al ser el desarrollo tan costoso y lento, los equipos debían intercambiar *esfuerzo* por *señal* (validación), pasando por especificaciones largas, wireframes y diseños estáticos antes de llegar a un MVP.
+
+**La IA colapsa el costo de construir software funcional.** Con herramientas de *Vibecoding* como AI Studio, el esfuerzo requerido para pasar de una idea a un prototipo funcional (que ofrece la señal de validación más fuerte) se reduce drásticamente. Todo nuestro proceso cambia hacia iteraciones directas en software que funciona.
+
 ```
  ┌──────────┐      ┌────────────┐      ┌─────────────────────┐      ┌────────────────────┐      ┌────────┐
  │ 1. PLAN  ├─────►│ 2. PROTOTIPO├─────►│3. AÑADIR FUNCIONALID│─────►│4. PROBAR Y VERIFICAR├─────►│5. LANZAR│
