@@ -15,6 +15,12 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: 'Información del Curso',
+        items: [
+          { text: 'Agenda', link: '/agenda' }
+        ]
+      },
+      {
         text: 'Día 1',
         items: [
           { text: 'Sesión 1: AI Fundamentals & Workspace', link: '/workbook_dia1_sesion1_ai_fundamentals_workspace' },
