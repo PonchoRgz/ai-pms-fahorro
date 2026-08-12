@@ -136,6 +136,7 @@ Al delegar lo operativo, podemos enfocarnos en lo estratégico.
 
 * ¿Cómo adaptarías esta arquitectura de Escuadrón Autónomo para resolver un cuello de botella real en tu equipo de desarrollo actual?
 * Con el tiempo que te ahorra la IA, ¿en cuál de las tareas de "velocidad humana" deberías estar invirtiendo más energía?
+* Si tuvieras que delegar hoy mismo una de tus tareas semanales más repetitivas a un subagente, ¿cuál sería y qué reglas le pondrías en su `soul.md`?
 
 ---
 © Collective Academy® 2026. Todos los derechos reservados.

@@ -202,9 +202,8 @@ Construiremos 3 Skills dentro de Antigravity Hub para automatizar tareas repetit
 ---
 
 ## 🧠 Reflexión y Cierre
-* ¿Qué parte del proceso cambió más tu forma de pensar?
-* ¿Qué caso real de tu equipo podrías trabajar con este método en los próximos 30 días?
-* Si tuvieras que delegar hoy mismo una de tus tareas semanales más repetitivas a un subagente, ¿cuál sería y qué reglas le pondrías en su `soul.md`?
+* ¿Qué proceso repetitivo en tu día a día crees que se vería más beneficiado al convertirse en un Skill estandarizado?
+* ¿Qué reglas o restricciones clave le pondrías a tu primer Skill para asegurar que el resultado tenga calidad?
 * De las 3 interfaces (Hub, IDE, CLI), ¿cuál sientes que se adapta mejor a tu estilo de trabajo actual y por qué?
 * ¿Qué base de datos o herramienta interna de tu empresa crees que tendría el mayor impacto si la conectaras a tus agentes usando un MCP?
 
