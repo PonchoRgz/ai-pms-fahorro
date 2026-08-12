@@ -31,13 +31,7 @@ export default defineConfig({
               { text: 'Gemini Enterprise & Agentes', link: '/workbook_dia1_sesion2_gemini_enterprise_agentes' }
             ]
           },
-          {
-            text: 'Bloque 2: Prototipado Rápido con AI Studio',
-            collapsed: true,
-            items: [
-              { text: 'Prototipado en AI Studio', link: '/workbook_dia1_sesion3_prototipado_ai_studio' }
-            ]
-          }
+          { text: 'Bloque 2: Prototipado Rápido con AI Studio', link: '/workbook_dia1_sesion3_prototipado_ai_studio' }
         ]
       },
       {
@@ -51,13 +45,7 @@ export default defineConfig({
               { text: 'Conectividad y Datos con MCP', link: '/workbook_dia2_sesion2_integraciones_mcp' }
             ]
           },
-          {
-            text: 'Bloque 2: Multi-Agentes y el Futuro del PM',
-            collapsed: true,
-            items: [
-              { text: 'Multi-Agent Workflows', link: '/workbook_dia2_sesion3_multi_agentes_orquestacion' }
-            ]
-          }
+          { text: 'Bloque 2: Multi-Agentes y el Futuro del PM', link: '/workbook_dia2_sesion3_multi_agentes_orquestacion' }
         ]
       }
     ]
