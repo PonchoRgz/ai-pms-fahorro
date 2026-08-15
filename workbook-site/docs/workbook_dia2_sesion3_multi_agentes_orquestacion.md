@@ -26,6 +26,24 @@ Pasar de un Agente Individual a un Flujo Multiagente significa convertirse en el
 | **`agents.md`** | **Organigrama / Directorio:** Catálogo de expertos disponibles. Define a quién llamar y las capacidades de cada subagente. |
 | **`memory.md`** | **Continuidad:** Insights destilados a largo plazo (`MEMORY.md`) y *Daily logs* (`memory/YYYY-MM-DD.md`) con las notas crudas. Como los agentes se reinician limpios, el agente anota sus avances aquí para tener continuidad perfecta entre sesiones. Text > Brain. |
 
+### 💾 El Dilema de la Memoria y su Arquitectura
+La promesa de la IA generativa es tener asistentes que retienen preferencias históricas y contexto. Sin embargo, la realidad suele ser contaminación cruzada entre proyectos (*context bleed*) y alucinaciones por supuestos desactualizados. 
+
+Para resolver esto, utilizamos un **Modelo de Madurez de Memoria de Nivel 3 (Sistema Estructurado en Texto Plano)**, donde tenemos auditabilidad total, control humano y portabilidad, evitando las "cajas negras". La regla de oro es: *Si no puedes abrir el archivo y editarlo en texto plano, no confíes la memoria de tu producto al modelo.*
+
+**Anatomía del Sistema Memory:**
+1. **Imposed Memory (`GEMINI.md` / `soul.md` / *System Instructions*):** Reglas inmutables impuestas por el PM (criterios de calidad, tono, directrices estratégicas).
+2. **Scoped Context (`projects/*.md`):** Contexto operativo vivo del producto (PRDs, KPIs de éxito, restricciones técnicas, stakeholders).
+3. **Learned Memory (`log.md` / *Daily Logs*):** Bitácora cronológica alimentada por la IA al cierre de cada interacción (decisiones tomadas, bloqueos resueltos).
+
+**Step-by-Step de Implementación:**
+* **Paso 1 (Estructurar):** Crear el directorio base con `GEMINI.md`, archivos de contexto de proyecto y logs.
+* **Paso 2 (Configurar):** Cargar directrices maestras en `GEMINI.md` o en los Skills.
+* **Paso 3 (Ejecutar):** Trabajar sesiones delimitadas forzando la lectura exclusiva del archivo del proyecto activo.
+* **Paso 4 (Cerrar y Promover):** Ejecutar un prompt de síntesis al final del sprint (ej. usando tareas programadas o *Scheduled Tasks*) y promover aprendizajes clave a las reglas maestras (Long-term memory).
+
+> [!NOTE]
+> La IA olvida con el tiempo. El archivo `memory.md` es un documento vivo. Antes de "irse a dormir", el agente anota ahí sus decisiones (Ej: *"14 de Agosto: Terminé el login, pero hay un bug en la BD. Próximo paso: Arreglar conexión"*). Tú puedes cerrar tu computadora el viernes, abrirla el lunes, y el agente lee este archivo para retomar el trabajo exactamente donde lo dejó. Contexto limpio equivale a decisiones de producto sólidas.
 ---
 
 ## 🏢 3. Manos a la Obra Final: Sistema Multiagente para el Kit de Lanzamiento
