@@ -5,6 +5,9 @@ export default defineConfig({
   title: "AI for PMs – FAhorro",
   description: "Workbooks para líderes de producto de Farmacias del Ahorro",
   lang: 'es-ES',
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/ai-pms-fahorro/favicon.png' }]
+  ],
   themeConfig: {
     siteTitle: false,
     logo: { light: '/logo-light.png', dark: '/logo-dark.png' },
