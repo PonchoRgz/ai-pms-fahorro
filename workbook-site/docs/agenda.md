@@ -1,10 +1,8 @@
 # 🕒 Agenda del Curso: AI for Product Managers
 
-Este documento desglosa la agenda para impartir el curso a lo largo de **2 días**, divididos en **4 bloques de 3 horas (180 minutos)** cada uno. Sus horarios son iguales ambos días:
-- Bloque 1: de 10:00 am a 1:00 pm
-- Bloque 2: de 2:00 pm a 5:00 pm
+Este documento desglosa la agenda para impartir el curso a lo largo de **2 días**, divididos en **4 bloques de 3 horas (180 minutos)** cada uno.
 
-El diseño instruccional para cada tema principal sigue tu metodología estructurada:
+El diseño instruccional para cada tema principal sigue la metodología estructurada:
 1. **Teoría** (Fundamentos).
 2. **I do and you see** (Demostración en vivo).
 3. **You do** (Manos a la obra / Ejercicio práctico).
