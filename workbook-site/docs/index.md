@@ -15,4 +15,7 @@ hero:
     - theme: alt
       text: Día 2
       link: /workbook_dia2_sesion1_ecosistema_antigravity_orquestacion
+    - theme: alt
+      text: Agenda
+      link: /agenda
 ---
