@@ -14,9 +14,33 @@
 
 ---
 
-## 👥 2. Multi-Agent Workflows: El Escuadrón Autónomo
+## 👥 2. Multi-Agent Workflows: De un Asistente a un Escuadrón Autónomo
 
-Pasar de un Agente Individual a un Flujo Multiagente significa convertirse en el Director de Producto. El Orquestador recibe la instrucción, divide el trabajo y delega tareas a otros agentes expertos (`@ux_agent`, `@qa_agent`, `@backend_agent`).
+Pasar de un Agente Individual a un Flujo Multiagente significa convertirse en el **Director de Producto** del sistema. En lugar de intentar resolver flujos complejos en un solo prompt monolítico y secuencial, estructuramos un equipo de trabajo: definimos roles especializados, entregables acotados y un coordinador general.
+
+### ⚡ Subagentes en Paralelo y Descomposición de Tareas
+El objetivo es descomponer flujos de trabajo monolíticos y complejos en tareas atómicas y especializadas que puedan ejecutarse de forma concurrente, optimizando tiempos de respuesta (*time-to-completion*) y aislando puntos de fallo.
+
+#### 🔑 Conceptos Clave
+* **Desacoplamiento funcional:** Separar tareas analíticas independientes para que no compitan por la misma ventana de contexto.
+* **Orquestador (*Parent Coordinator*):** Agente principal responsable de instanciar subagentes (`define_subagent`), disparar su ejecución (`invoke_subagent`), recopilar resultados intermedios y resolver discrepancias o conflictos entre entregables.
+* **Aislamiento de fallos (*Fault Isolation*):** Si un subagente específico encuentra un error o genera una salida no válida, solo se reintenta esa subtarea sin reiniciar todo el flujo de trabajo.
+* **Condiciones de carrera (*Race Conditions*):** Conflicto que ocurre cuando dos subagentes intentan modificar el mismo recurso (documento, base de datos o estado) al mismo tiempo sin sincronización.
+
+#### 📊 Ejemplo de Aplicación para un PM: Análisis Competitivo y de Mercado
+* **Enfoque tradicional (Monolítico):** Un único agente busca datos de 5 competidores secuencialmente, consumiendo minutos y acumulando un contexto tan extenso que degrada la calidad analítica.
+* **Enfoque multiagente en paralelo:**
+  1. El agente orquestador recibe la instrucción: *"Analizar el panorama de precios de 5 competidores"*.
+  2. El orquestador instancia en paralelo 5 subagentes idénticos, asignando a cada uno un competidor específico con instrucciones y fuentes delimitadas.
+  3. Cada subagente procesa su investigación de forma simultánea.
+  4. El orquestador recibe los 5 informes parciales, ejecuta un paso de síntesis comparativa y genera la matriz final en una fracción del tiempo.
+
+#### ⚠️ Consejos de Implementación y Antipatrones
+* **Antipatrón de Sobre-fragmentación (*Micro-agent Sprawl*):** No crees subagentes para micro-operaciones triviales (ej. un subagente solo para formatear una fecha). La sobrecarga de orquestación y consumo de tokens supera el beneficio.
+* **Granularidad adecuada:** Delega a subagentes únicamente bloques de trabajo que requieran procesamiento independiente intensivo o acceso a herramientas especializadas distintas.
+* **Estrategia de agregación:** Define reglas claras de consolidación en el orquestador para cuando dos subagentes devuelvan datos contradictorios o no concluyentes.
+
+---
 
 ### 🧠 El Sistema de Archivos (El Cerebro del Agente)
 
@@ -71,12 +95,20 @@ Para resolver esto, utilizamos un **Modelo de Madurez de Memoria de Nivel 3 (Sis
 ---
 
 <details>
-<summary><b>🏋️ Stretch Goal (Ejercicios opcionales de ampliación): Haz clic para desplegar</b></summary>
+<summary><b>🏋️ Stretch Goals (Ejercicios opcionales de ampliación): Haz clic para desplegar</b></summary>
 
-**Agente de Marketing con Investigación Competitiva Autónoma (`/browser`)**
+### 1. Agente de Marketing con Investigación Competitiva Autónoma (`/browser`)
 * **Objetivo:** Dar al subagente de Marketing la capacidad de investigar antes de crear contenido.
 * **Instrucción en `soul.md` de Marketing:** "Antes de redactar el correo de anuncio, invoca la herramienta `/browser` para revisar las promociones actuales en los sitios web de la competencia. Asegúrate de resaltar en nuestro correo al menos 2 ventajas únicas de Simple Mode que la competencia no ofrezca."
 * **Entregable:** Correo final auditado por Legal que incluye una sección competitiva basada en datos web en tiempo real.
+
+### 2. Mapeo de Descomposición de un PRD
+* **Objetivo:** Diseñar la arquitectura de descomposición concurrente para un requerimiento de producto complejo.
+* **Ejercicio:** Toma un requerimiento complejo (ej. *Lanzamiento de un nuevo sistema de pagos / billetera digital para Farmacias del Ahorro*) y diseña en un diagrama o esquema:
+  * Qué subagentes se crearían en paralelo (ej. `analisis_regulatorio_fintech`, `ux_benchmark_pagos`, `estimacion_arquitectura_tecnica`).
+  * Cuál es el rol y las reglas de agregación del Orquestador.
+  * Cómo se previene la sobre-fragmentación (*micro-agent sprawl*) y cómo se manejan posibles discrepancias entre regulatorio y UX.
+* **Entregable:** Diagrama de flujo de orquestación con definición de roles, entradas, salidas y puntos de sincronización.
 
 </details>
 
@@ -155,6 +187,7 @@ Al delegar lo operativo, podemos enfocarnos en lo estratégico.
 * ¿Cómo adaptarías esta arquitectura de Escuadrón Autónomo para resolver un cuello de botella real en tu equipo de desarrollo actual?
 * Con el tiempo que te ahorra la IA, ¿en cuál de las tareas de "velocidad humana" deberías estar invirtiendo más energía?
 * Si tuvieras que delegar hoy mismo una de tus tareas semanales más repetitivas a un subagente, ¿cuál sería y qué reglas le pondrías en su `soul.md`?
+* 💬 **Pregunta de debate:** ¿En qué casos la latencia de red y el costo de orquestación (consumo de tokens) hacen que un flujo secuencial sea preferible a uno en paralelo?
 
 ---
 © Collective Academy® 2026. Todos los derechos reservados.
